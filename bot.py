@@ -99,16 +99,17 @@ def main():
                 MessageHandler(
                     Filters.document.file_extension('xls') | Filters.document.file_extension('xlsx'), process_first_file
                 ),
+                CommandHandler('cancel', cancel),
                 MessageHandler(Filters.all, invalid_first_file),
             ],
             WAITING_SECOND_FILE: [
                 MessageHandler(
                     Filters.document.file_extension('xls') | Filters.document.file_extension('xlsx'), compare
                 ),
+                CommandHandler('cancel', cancel),
                 MessageHandler(Filters.all, invalid_second_file),
             ],
         },
-        fallbacks=[CommandHandler('cancel', cancel)],
         name='Compare Conversation',
         persistent=True,
     )
