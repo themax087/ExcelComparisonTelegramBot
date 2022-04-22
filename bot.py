@@ -110,6 +110,7 @@ def main():
                 MessageHandler(Filters.all, invalid_second_file),
             ],
         },
+        fallbacks=[CommandHandler('cancel', cancel)],
         name='Compare Conversation',
         persistent=True,
     )
