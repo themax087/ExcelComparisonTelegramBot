@@ -15,7 +15,7 @@ from excel import open_excel_file, find_diff
 WAITING_FIRST_FILE, WAITING_SECOND_FILE = range(2)
 
 ASK_FIRST_FILE_MESSAGE = "Надішліть перший файл для порівняння формату xlsx/xls"
-ASK_SECOND_FILE_MESSAGE = "Надішліть перший файл для порівняння формату xlsx/xls"
+ASK_SECOND_FILE_MESSAGE = "Надішліть другий файл для порівняння формату xlsx/xls"
 INVALID_MESSAGE_WAITING_FOR_FILE = "Надішліть файл формату xlsx/xls або скасуйте порівняння командою /cancel"
 INVALID_MESSAGE_WAITING_START = "Для початку порівняння використайте команду /compare"
 CANCEL_MESSAGE = "Порівняння скасовано"
