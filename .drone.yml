@@ -5,5 +5,8 @@ name: default
 steps:
 - name: test
   image: python
+  environment:
+    USERNAME:
+      from_secret: test_s
   commands:
-  - python3 -c "print('Hello world')"
+  - printenv
