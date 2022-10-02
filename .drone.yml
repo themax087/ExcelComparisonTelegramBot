@@ -1,13 +1,9 @@
----
 kind: pipeline
 type: kubernetes
 name: default
 
-platform:
-  os: linux
-  arch: amd64
-
 steps:
-- name: greeting
+- name: test
+  image: python
   commands:
-  - echo hello world
+  - python3 -c "print('Hello world')"
