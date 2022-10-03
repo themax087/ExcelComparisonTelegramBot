@@ -11,12 +11,11 @@ steps:
       password:
         from_secret: REGISTRY_PASSWORD
       registry: registry.ivanchenko.io
-      repo: library/${DRONE_REPO_NAME}
+      repo: registry.ivanchenko.io/library/${DRONE_REPO_NAME}
       cache_from: registry.ivanchenko.io/library/${DRONE_REPO_NAME}:main
       tags:
         - ${DRONE_BRANCH/\//-}
         - ${DRONE_BRANCH/\//-}-${DRONE_COMMIT:0:8}
-      custom_dns: 1.1.1.1
       mtu: 1000
 
   - name: helm
