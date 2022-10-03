@@ -50,7 +50,7 @@ def compare(update, context):
         first.download(out=first_tmp)
         second.download(out=second_tmp)
         first_excel_file = open_excel_file(first_tmp.name)
-        second_excel_file = open_excel_file(second_tmp.name)
+        second_excel_file = open_excel_file(second_tmp.name, read_only=True)
         highlights = find_diff(first_excel_file, second_excel_file)
         first_excel_file.copy_with_highlights(first_tmp.name, highlights)
         first_tmp.seek(0)

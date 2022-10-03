@@ -107,9 +107,9 @@ class XlsFile:
 
 
 class XlsxFile:
-    def __init__(self, filename):
+    def __init__(self, filename, read_only=False):
         self.filename = filename
-        self.book = load_workbook(filename)
+        self.book = load_workbook(filename, read_only=read_only)
         self.sheets = {}
 
     @property
@@ -145,11 +145,11 @@ class XlsxFile:
         self.book.save(path)
 
 
-def open_excel_file(filename: str):
+def open_excel_file(filename: str, read_only=False):
     if filename.endswith('.xls'):
         return XlsFile(filename)
     elif filename.endswith('.xlsx'):
-        return XlsxFile(filename)
+        return XlsxFile(filename, read_only=read_only)
     else:
         raise NotImplementedError
 
