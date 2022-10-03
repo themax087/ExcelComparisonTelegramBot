@@ -17,6 +17,7 @@ steps:
         - ${DRONE_BRANCH/\//-}
         - ${DRONE_BRANCH/\//-}-${DRONE_COMMIT:0:8}
       custom_dns: 1.1.1.1
+      mtu: 1000
 
   - name: helm
     image: alpine/helm:3.10.0
