@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM 3.9-alpine3.16
 
 WORKDIR /app
 COPY requirements.txt /app
