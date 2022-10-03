@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: registry.ivanchenko.io/library/excel-comparison-bot
   pullPolicy: IfNotPresent
-  tag: ""
+  tag: "main"
 
 imagePullSecrets: []
 nameOverride: ""
