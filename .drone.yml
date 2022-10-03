@@ -27,5 +27,5 @@ steps:
         from_secret: REGISTRY_PASSWORD
     commands:
       - helm registry login registry.ivanchenko.io -u $${REGISTRY_USERNAME} -p $${REGISTRY_PASSWORD}
-      - chart=$(helm package chart)
-      - helm push $(basename ${chart#*/}) oci://registry.ivanchenko.io/library
+      - chart=$$(helm package chart)
+      - helm push $$(basename $${chart#*/}) oci://registry.ivanchenko.io/library
