@@ -1,16 +1,10 @@
 from os import environ
 from tempfile import NamedTemporaryFile
 
-from telegram.ext import (
-    Updater,
-    CommandHandler,
-    MessageHandler,
-    Filters,
-    ConversationHandler,
-    DictPersistence,
-)
+from telegram.ext import (CommandHandler, ConversationHandler, DictPersistence,
+                          Filters, MessageHandler, Updater)
 
-from excel import open_excel_file, find_diff
+from excel_comparison_bot.excel import find_diff, open_excel_file
 
 WAITING_FIRST_FILE, WAITING_SECOND_FILE = range(2)
 

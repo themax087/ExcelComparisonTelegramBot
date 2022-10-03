@@ -1,0 +1,13 @@
+.idea
+.dockerignore
+.env
+.git
+.gitignore
+Dockerfile
+.drone.yml
+__pycache__
+*.pyc
+*.egg-info
+.ve*
+venv*
+chart
