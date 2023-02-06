@@ -1,6 +1,6 @@
+<div align="center">
+
 # Excel Comparison Bot
-
-
 
 [![Bot link](https://badgen.net/badge/icon/telegram?icon=telegram&label)](https://t.me/ExcelComparisonBot)
 [![Build Status](https://drone.ivanchenko.io/api/badges/vanchaxy/excel-comparison-bot/status.svg?ref=refs/heads/main)](https://drone.ivanchenko.io/vanchaxy/excel-comparison-bot)
@@ -8,6 +8,7 @@
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+</div>
 
 This is a [Telegram bot](https://t.me/ExcelComparisonBot) that helps you compare two Excel files and shows the differences between them.
 
