@@ -4,7 +4,7 @@
 
 [![Bot link](https://badgen.net/badge/icon/telegram?icon=telegram&label)](https://t.me/ExcelComparisonBot)
 [![Build Status](https://drone.ivanchenko.io/api/badges/vanchaxy/excel-comparison-bot/status.svg?ref=refs/heads/main)](https://drone.ivanchenko.io/vanchaxy/excel-comparison-bot)
-[![App Status](https://argocd.ivanchenko.io/api/badge?name=excel-comparison-bot&revision=true)](https://argocd.ivanchenko.io/applications/excel-comparison-bot)
+[![App Status](https://argocd.ivanchenko.io/api/badge?name=excel-comparison-bot)](https://argocd.ivanchenko.io/applications/excel-comparison-bot)
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
